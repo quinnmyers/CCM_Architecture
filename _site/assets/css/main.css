@@ -363,3 +363,100 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
+
+.jumbotron .jumbotron-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100vh;
+  background-image: url(/assets/images/jumbotron.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .jumbotron .jumbotron-container .phone-number-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 15px; }
+    .jumbotron .jumbotron-container .phone-number-container .phone-number {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      width: auto;
+      color: red;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      color: white;
+      border: 2px solid white; }
+      .jumbotron .jumbotron-container .phone-number-container .phone-number p {
+        margin: 0;
+        padding: 7px 10px; }
+  .jumbotron .jumbotron-container .logo-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100%;
+    width: 100%; }
+    .jumbotron .jumbotron-container .logo-container .logo {
+      display: -ms-flexbox;
+      display: flex;
+      height: 50%;
+      width: 50%;
+      background-image: url(/assets/images/main-logo.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+
+.navbar .navbar-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 70px;
+  width: 100%;
+  background: #313131; }
+  .navbar .navbar-container .navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100%;
+    width: 70%; }
+    .navbar .navbar-container .navbar ul {
+      list-style: none;
+      font-family: "Avenir";
+      font-weight: bold;
+      font-size: 12pt;
+      color: white; }
+      .navbar .navbar-container .navbar ul li, .navbar .navbar-container .navbar ul a {
+        display: inline;
+        color: white;
+        text-decoration: none;
+        padding: 0 10px; }
+    .navbar .navbar-container .navbar p {
+      margin: 0; }
+
+.home-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  height: auto;
+  background: lightgrey; }
