@@ -410,7 +410,7 @@ textarea {
         align-items: center;
     height: 100%;
     width: 100%;
-    margin-top: -30px; }
+    margin-top: 30px; }
     .jumbotron .jumbotron-container .logo-container .logo {
       display: -ms-flexbox;
       display: flex;
@@ -459,6 +459,8 @@ textarea {
 
 .mobile-nav-container {
   display: none;
+  -ms-flex-direction: row;
+      flex-direction: row;
   width: 100%;
   -ms-flex-pack: end;
       justify-content: flex-end;
@@ -489,6 +491,26 @@ textarea {
   background: #313131;
   position: absolute;
   top: 0; }
+  .hamburger-container .mobile-number {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 35px;
+    width: 120px;
+    margin-left: 5px;
+    border: 1px solid white; }
+    .hamburger-container .mobile-number p {
+      -ms-flex-item-align: center;
+          align-self: center;
+      font-family: "Avenir";
+      color: white;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      font-size: 10pt;
+      margin: 0; }
   .hamburger-container .hamburger {
     display: none;
     -ms-flex-direction: column;
@@ -566,6 +588,12 @@ textarea {
     font-size: 12pt; }
     .about .about-container .about-text p {
       margin: 0; }
+
+@media (max-width: 860px) {
+  .about .about-container .about-text {
+    width: 100% !important; }
+    .about .about-container .about-text p {
+      padding: 0px 10px !important; } }
 
 .panel .panel-container {
   display: -ms-flexbox;
@@ -651,16 +679,35 @@ textarea {
     .panel .panel-container .panels .panel-1:hover, .panel .panel-container .panels .panel-2:hover, .panel .panel-container .panels .panel-3:hover {
       background: rgba(0, 0, 0, 0.5); }
 
+@media (max-width: 750px) {
+  .panel-container {
+    height: auto !important; }
+    .panel-container .panels {
+      -ms-flex-direction: column !important;
+          flex-direction: column !important; }
+      .panel-container .panels .panel-1, .panel-container .panels .panel-2, .panel-container .panels .panel-3 {
+        -ms-flex-item-align: center;
+            align-self: center;
+        width: 100% !important; }
+        .panel-container .panels .panel-1 .gallery, .panel-container .panels .panel-1 .projects, .panel-container .panels .panel-1 .blog, .panel-container .panels .panel-2 .gallery, .panel-container .panels .panel-2 .projects, .panel-container .panels .panel-2 .blog, .panel-container .panels .panel-3 .gallery, .panel-container .panels .panel-3 .projects, .panel-container .panels .panel-3 .blog {
+          -ms-flex-direction: row !important;
+              flex-direction: row !important;
+          margin-bottom: 30px !important; }
+          .panel-container .panels .panel-1 .gallery .title, .panel-container .panels .panel-1 .projects .title, .panel-container .panels .panel-1 .blog .title, .panel-container .panels .panel-2 .gallery .title, .panel-container .panels .panel-2 .projects .title, .panel-container .panels .panel-2 .blog .title, .panel-container .panels .panel-3 .gallery .title, .panel-container .panels .panel-3 .projects .title, .panel-container .panels .panel-3 .blog .title {
+            margin-left: 40px !important; }
+        .panel-container .panels .panel-1 .projects, .panel-container .panels .panel-2 .projects, .panel-container .panels .panel-3 .projects {
+          margin-top: 30px !important; } }
+
 .houzz {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .houzz .houzz-container {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 275px;
     width: 100%; }
     .houzz .houzz-container .houzz-logo {
@@ -669,8 +716,6 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
       height: 100%;
-      width: auto;
-      background: white;
       margin-right: 50px; }
       .houzz .houzz-container .houzz-logo .logo {
         height: 300px;
@@ -680,8 +725,33 @@ textarea {
         background-position: center;
         background-size: contain; }
     .houzz .houzz-container .houzz-slider {
-      margin-top: -3px;
-      margin-left: 50px; }
+      display: -ms-flexbox;
+      display: flex;
+      width: 300px; }
+
+@media (max-width: 700px) {
+  .houzz .houzz-container {
+    height: auto !important;
+    -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    -ms-flex-pack: center !important;
+        justify-content: center !important; }
+    .houzz .houzz-container .houzz-logo {
+      width: 100% !important; }
+    .houzz .houzz-container .houzz-slider {
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+      -ms-flex-item-align: center !important;
+          align-self: center !important;
+      margin-left: 0px !important;
+      width: 100% !important;
+      margin-bottom: 30px; }
+      .houzz .houzz-container .houzz-slider .test {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-item-align: center !important;
+            align-self: center !important;
+        width: auto !important; } }
 
 .testimonials .testimonials-container {
   display: -ms-flexbox;
@@ -724,6 +794,17 @@ textarea {
       color: white;
       font-family: "Avenir";
       letter-spacing: 2px; }
+
+@media (max-width: 480px) {
+  .testimonials .testimonials-container {
+    height: 300px !important; }
+    .testimonials .testimonials-container .testimonials-title {
+      font-size: 18pt !important; }
+    .testimonials .testimonials-container .testimonials-btn-container {
+      height: 40px !important;
+      width: 150px !important; }
+      .testimonials .testimonials-container .testimonials-btn-container p {
+        font-size: 10pt !important; } }
 
 .footer .footer-container {
   display: -ms-flexbox;

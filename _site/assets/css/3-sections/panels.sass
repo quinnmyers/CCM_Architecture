@@ -76,3 +76,19 @@
 
       .panel-1:hover, .panel-2:hover, .panel-3:hover
         background: rgba(0,0,0,0.5)
+
+@media(max-width:750px)
+  .panel-container
+    height: auto !important
+    .panels
+      flex-direction: column !important
+      .panel-1, .panel-2, .panel-3
+        align-self: center
+        width: 100% !important
+        .gallery, .projects, .blog
+          flex-direction: row !important
+          margin-bottom: 30px !important
+          .title
+            margin-left: 40px !important
+        .projects
+          margin-top: 30px !important

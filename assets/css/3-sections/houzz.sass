@@ -1,17 +1,15 @@
 .houzz
   display: flex
-  flex-direction: row
+  flex-direction: column
   .houzz-container
     display: flex
-    justify-content: center
+    justify-content: space-around
     height: 275px
     width: 100%
     .houzz-logo
       display: flex
       justify-content: center
       height: 100%
-      width: auto
-      background: white
       margin-right: 50px
       .logo
         height: 300px
@@ -22,5 +20,24 @@
           position: center
           size: contain
     .houzz-slider
-      margin-top: -3px
-      margin-left: 50px
+      display: flex
+      width: 300px
+
+@media(max-width:700px)
+  .houzz
+    .houzz-container
+      height: auto !important
+      flex-direction: column !important
+      justify-content: center !important
+      .houzz-logo
+        width: 100% !important
+      .houzz-slider
+        justify-content: center !important
+        align-self: center !important
+        margin-left: 0px !important
+        width: 100% !important
+        margin-bottom: 30px
+        .test
+          display: flex !important
+          align-self: center !important
+          width: auto !important

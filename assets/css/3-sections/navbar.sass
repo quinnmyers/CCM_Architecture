@@ -30,6 +30,7 @@
         margin: 0
 .mobile-nav-container
   display: none
+  flex-direction: row
   width: 100%
   justify-content: flex-end
   text-align: right
@@ -55,6 +56,22 @@
   background: $darkgrey
   position: absolute
   top: 0
+  .mobile-number
+    display: flex
+    align-self: center
+    justify-content: center
+    height: 35px
+    width: 120px
+    margin-left: 5px
+    border: 1px solid white
+    p
+      align-self: center
+      font-family: "Avenir"
+      color: white
+      font-weight: lighter
+      letter-spacing: 2px
+      font-size: 10pt
+      margin: 0
   .hamburger
     display: none
     flex-direction: column
