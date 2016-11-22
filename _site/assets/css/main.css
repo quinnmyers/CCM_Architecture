@@ -576,7 +576,8 @@ textarea {
   width: 100%;
   max-width: 800px;
   margin: auto;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  margin-top: 30px; }
   .about .about-container .about-title {
     display: -ms-flexbox;
     display: flex;
@@ -996,6 +997,4 @@ textarea {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    margin-top: -50px; }
+    width: 100vw; }
