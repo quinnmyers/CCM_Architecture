@@ -10,6 +10,8 @@
       repeat: no-repeat
       size: cover
       position: center
+    a, a:visited
+      text-decoration: none
     .testimonials-title
       display: flex
       align-self: center
@@ -32,3 +34,17 @@
         color: white
         font-family: "Avenir"
         letter-spacing: 2px
+    .testimonials-btn-container:hover
+      background: rgba(0,0,0,0.5)    
+
+@media(max-width:480px)
+  .testimonials
+    .testimonials-container
+      height: 300px !important
+      .testimonials-title
+        font-size: 18pt !important
+      .testimonials-btn-container
+        height: 40px !important
+        width: 150px !important
+        p
+          font-size: 10pt !important

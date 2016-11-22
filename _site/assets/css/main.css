@@ -766,6 +766,8 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  .testimonials .testimonials-container a, .testimonials .testimonials-container a:visited {
+    text-decoration: none; }
   .testimonials .testimonials-container .testimonials-title {
     display: -ms-flexbox;
     display: flex;
@@ -794,6 +796,8 @@ textarea {
       color: white;
       font-family: "Avenir";
       letter-spacing: 2px; }
+  .testimonials .testimonials-container .testimonials-btn-container:hover {
+    background: rgba(0, 0, 0, 0.5); }
 
 @media (max-width: 480px) {
   .testimonials .testimonials-container {
@@ -842,6 +846,10 @@ textarea {
       color: #313131; }
     .footer .footer-container .work-together a:hover {
       text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .footer .footer-container .work-together {
+    font-size: 14pt !important; } }
 
 .home-wrap {
   display: -ms-flexbox;
