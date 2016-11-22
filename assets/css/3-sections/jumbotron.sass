@@ -44,7 +44,23 @@
           image: url(/assets/images/main-logo.png)
           size: contain
           repeat: no-repeat
+    .arrow-container
+      display: flex
+      height: 60px
+      width: 80px
+      align-self: center
+      margin-bottom: 10px
+      background:
+        image: url(/assets/images/landing-arrow.svg)
+        size: contain
+        repeat: no-repeat
 
 @media(max-width:860px)
   .phone-number-container
     display: none !important
+
+
+@media(max-width: 500px)
+  .arrow-container
+    height: 60px !important
+    width: 60px !important    
