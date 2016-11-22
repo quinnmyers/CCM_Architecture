@@ -1,1 +1,25 @@
-h1 this is a test contact page
+section.contact
+  .contact-container
+    .left-info
+      p CCM Architecture
+      p 111 North 81st St.
+      p Seattle, WA
+      p 206-595-9690
+    .line
+    .contact-form
+      .form-container
+        form(action="https://formspree.io/charles@ccmarchitecture.com" method="POST")
+          .name
+            p Name
+            input(type="text" name="name" class="yourname")
+          .email
+            p E-Mail
+            input(type="email" name="_replyto" class="youremail")
+          .phone
+            p Phone Number
+            input(type="text" name="_phone" class="yourphone")
+          .message
+            p Message
+            textarea(type="message" name="_message" class="yourmessage")
+          .button
+            input(type="submit" value="Send" class="submitbutton")
