@@ -3,26 +3,29 @@
     display: flex
     flex-direction: column
     height: 50px
-    width: 100%
+    width: 100vw
     background: $darkgrey
+
     .navbar
       display: flex
-      align-self: center
-      justify-content: center
       align-items: center
       height: 100%
-      width: 100%
+      width: auto
+      background: $darkgrey
       ul
         list-style: none
         font-family: "Avenir"
         font-weight: bold
         font-size: 10pt
-        color: white
+        width: 100%
+        text-align: center
         li, a
           display: inline
           color: white
           text-decoration: none
-          padding: 0 10px
-
+          padding: 0 8px
+          .first
+          .last
+            padding-right: 50px
       p
         margin: 0
