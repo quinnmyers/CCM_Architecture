@@ -420,6 +420,10 @@ textarea {
       background-size: contain;
       background-repeat: no-repeat; }
 
+@media (max-width: 860px) {
+  .phone-number-container {
+    display: none !important; } }
+
 .navbar .navbar-container {
   display: -ms-flexbox;
   display: flex;
@@ -453,6 +457,73 @@ textarea {
     .navbar .navbar-container .navbar p {
       margin: 0; }
 
+.mobile-nav-container {
+  display: none;
+  width: 100%;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  text-align: right;
+  background: #313131; }
+  .mobile-nav-container .mobile-nav {
+    margin-right: 12px;
+    margin-top: 50px;
+    list-style: none; }
+    .mobile-nav-container .mobile-nav li, .mobile-nav-container .mobile-nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: lighter;
+      font-size: 10pt;
+      font-family: "Avenir";
+      padding: 4px 0px; }
+
+.is-active {
+  display: -ms-flexbox;
+  display: flex; }
+
+.hamburger-container {
+  display: none;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  height: 45px;
+  width: 100%;
+  background: #313131;
+  position: absolute;
+  top: 0; }
+  .hamburger-container .hamburger {
+    display: none;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 25px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 9px;
+    margin-right: 10px; }
+    .hamburger-container .hamburger .line1, .hamburger-container .hamburger .line2, .hamburger-container .hamburger .line3 {
+      display: -ms-flexbox;
+      display: flex;
+      height: 2px;
+      width: 100%;
+      background: white; }
+
+@media (max-width: 860px) {
+  .navbar {
+    display: none !important; } }
+
+@media (max-width: 860px) {
+  .mobile-nav-container {
+    position: absolute !important;
+    top: 0 !important; }
+  .hamburger-container {
+    display: -ms-flexbox !important;
+    display: flex !important; }
+    .hamburger-container .hamburger {
+      display: -ms-flexbox !important;
+      display: flex !important; } }
+
 .about .about-container {
   display: -ms-flexbox;
   display: flex;
@@ -475,7 +546,7 @@ textarea {
     font-family: "Avenir";
     letter-spacing: 3px;
     font-size: 20pt;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px; }
     .about .about-container .about-title p {
       margin: 0; }
@@ -718,4 +789,5 @@ textarea {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
-    width: 100vw; }
+    width: 100vw;
+    margin-top: 30px; }

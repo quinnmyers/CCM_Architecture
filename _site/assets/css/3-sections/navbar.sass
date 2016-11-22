@@ -5,7 +5,6 @@
     height: 50px
     width: 100vw
     background: $darkgrey
-
     .navbar
       display: flex
       align-items: center
@@ -29,3 +28,50 @@
             padding-right: 50px
       p
         margin: 0
+.mobile-nav-container
+  display: none
+  width: 100%
+  justify-content: flex-end
+  text-align: right
+  background: $darkgrey
+  .mobile-nav
+    margin-right: 12px
+    margin-top: 50px
+    list-style: none
+    li, a
+      text-decoration: none
+      color: white
+      font-weight: lighter
+      font-size: 10pt
+      font-family: "Avenir"
+      padding: 4px 0px
+.is-active
+  display: flex
+.hamburger
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  height: 25px
+  width: 40px
+  background: red
+  position: absolute
+  top: 0
+  right: 0
+  margin-top: 10px
+  margin-right: 10px
+  .line1, .line2, .line3
+    display: flex
+    height: 2px
+    width: 100%
+    background: white
+
+@media(max-width:860px)
+  .navbar
+    display: none !important
+
+@media(max-width:860px)
+  .mobile-nav-container
+    position: absolute !important
+    top: 0 !important
+  .hamburger
+    display: flex !important
