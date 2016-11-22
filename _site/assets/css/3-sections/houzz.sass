@@ -1,0 +1,24 @@
+.houzz
+  display: flex
+  flex-direction: row
+  .houzz-container
+    display: flex
+    height: 275px
+    width: 100%
+    .houzz-logo
+      display: flex
+      justify-content: center
+      height: 100%
+      width: calc(100% - 300px)
+      background: white
+      border-left: 1px solid $darkgrey
+      .logo
+        height: 300px
+        width: 300px
+        background:
+          image: url(/assets/images/houzz-logo.png)
+          repeat: no-repeat
+          position: center
+          size: contain
+    .houzz-slider
+      margin-top: -3px

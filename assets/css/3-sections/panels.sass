@@ -1,0 +1,77 @@
+.panel
+  .panel-container
+    display: flex
+    flex-direction: row
+    height: 300px
+    background:
+      image: url(/assets/images/panel-background.jpg)
+      size: cover
+      repeat: no-repeat
+      position: center
+    .panels
+      display: flex
+      height: 100%
+      width: 100%
+      background: rgba(0,0,0,0.3)
+      .panel-1, .panel-2, .panel-3
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        width: 33.3%
+        .projects, .gallery, .blog
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          height: 100%
+          width: 200px
+          .title
+            color: white
+            font-family: "Avenir"
+            font-size: 18pt
+            p
+              margin: 0
+              padding-top: 30px
+      .panel-1
+        display: flex
+        flex-direction: column
+        background: rgba(0,0,0,0.3)
+        .projects
+          .icon
+            height: 90px
+            width: 90px
+            background:
+              image: url(/assets/images/home-icon.svg)
+              repeat: no-repeat
+              size: contain
+          .title
+      .panel-2
+        display: flex
+        flex-direction: column
+        background: rgba(0,0,0,0.3)
+        .gallery
+          .icon
+            height: 90px
+            width: 90px
+            background:
+              image: url(/assets/images/gallery-icon.svg)
+              repeat: no-repeat
+              size: contain
+          .title
+      .panel-3
+        display: flex
+        flex-direction: column
+        background: rgba(0,0,0,0.3)
+        .blog
+          .icon
+              height: 90px
+              width: 90px
+              background:
+                image: url(/assets/images/pencil-icon.svg)
+                repeat: no-repeat
+                size: contain
+          .title
+
+      .panel-1:hover, .panel-2:hover, .panel-3:hover
+        background: rgba(0,0,0,0.5)
