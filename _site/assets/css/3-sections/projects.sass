@@ -236,10 +236,12 @@
 
 @media(max-width:520px)
   .projects
+    width: 100% !important
     .projects-container
-      justify-content: center !important
-      align-items: center !important
+      .projects-title
+        width: 100% !important
       .stone, .almond, .shamah
+        width: 100% !important
         justify-content: center !important
         align-items: center !important
         .title
@@ -257,8 +259,11 @@
 @media(max-width:420px)
   .projects
     .projects-container
+      width: 100% !important
       .stone, .almond, .shamah
         .title
         .image-container
+          width: 100%
           .image-1, .image-2, .image-3, .image-4
-            height: 200px !important
+            height: 160px !important
+            width: 80% !important
