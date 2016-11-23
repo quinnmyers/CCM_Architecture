@@ -1333,6 +1333,97 @@ body.lb-disable-scrolling {
         background-repeat: no-repeat;
         background-position: center; }
 
+.gallery {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: auto; }
+  .gallery .gallery-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 900px; }
+    .gallery .gallery-container .gallery-title {
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 100%;
+      text-align: center;
+      font-family: "Avenir"; }
+      .gallery .gallery-container .gallery-title h2 {
+        color: #313131;
+        font-size: 24pt;
+        margin: 0;
+        margin-top: 30px;
+        letter-spacing: 2px; }
+      .gallery .gallery-container .gallery-title h3 {
+        font-weight: lighter;
+        color: #313131;
+        margin: 0;
+        margin-top: 6px;
+        font-size: 10pt;
+        letter-spacing: 1px; }
+    .gallery .gallery-container .image-container .row1, .gallery .gallery-container .image-container .row2, .gallery .gallery-container .image-container .row3 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      height: auto;
+      margin-top: 20px; }
+      .gallery .gallery-container .image-container .row1 .image-1, .gallery .gallery-container .image-container .row1 .image-2, .gallery .gallery-container .image-container .row1 .image-3, .gallery .gallery-container .image-container .row2 .image-1, .gallery .gallery-container .image-container .row2 .image-2, .gallery .gallery-container .image-container .row2 .image-3, .gallery .gallery-container .image-container .row3 .image-1, .gallery .gallery-container .image-container .row3 .image-2, .gallery .gallery-container .image-container .row3 .image-3 {
+        display: -ms-flexbox;
+        display: flex;
+        height: 170px;
+        width: 280px; }
+    .gallery .gallery-container .image-container .row1 .image-1 {
+      background-image: url(/assets/images/gallery/image1.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row1 .image-2 {
+      background-image: url(/assets/images/gallery/image2.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row1 .image-3 {
+      background-image: url(/assets/images/gallery/image3.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row2 .image-1 {
+      background-image: url(/assets/images/gallery/image4.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row2 .image-2 {
+      background-image: url(/assets/images/gallery/image5.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row2 .image-3 {
+      background-image: url(/assets/images/gallery/image6.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row3 .image-1 {
+      background-image: url(/assets/images/gallery/image7.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row3 .image-2 {
+      background-image: url(/assets/images/gallery/image8.jpg);
+      background-position: center;
+      background-size: cover; }
+    .gallery .gallery-container .image-container .row3 .image-3 {
+      background-image: url(/assets/images/gallery/image9.jpg);
+      background-position: center;
+      background-size: cover; }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;
