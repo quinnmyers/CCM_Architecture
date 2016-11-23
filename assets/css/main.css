@@ -1424,6 +1424,84 @@ body.lb-disable-scrolling {
       background-position: center;
       background-size: cover; }
 
+.blog {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  height: auto; }
+  .blog .blog-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-family: "Avenir";
+    width: 900px; }
+    .blog .blog-container .blogpage-title {
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 100%;
+      text-align: center; }
+      .blog .blog-container .blogpage-title h2 {
+        color: #313131;
+        font-size: 24pt;
+        margin: 0;
+        margin-top: 30px;
+        letter-spacing: 2px; }
+      .blog .blog-container .blogpage-title h3 {
+        font-weight: lighter;
+        color: #313131;
+        margin: 0;
+        margin-top: 6px;
+        font-size: 10pt;
+        letter-spacing: 1px; }
+      .blog .blog-container .blogpage-title .announcement {
+        font-size: 18pt; }
+    .blog .blog-container .post-1-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      height: auto;
+      width: 100%;
+      margin-top: 20px; }
+      .blog .blog-container .post-1-container .post-1 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        padding: 20px; }
+        .blog .blog-container .post-1-container .post-1 .left-column {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          height: auto;
+          width: 10%; }
+        .blog .blog-container .post-1-container .post-1 .content-column {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          height: auto;
+          width: 80%; }
+        .blog .blog-container .post-1-container .post-1 .right-column {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          height: auto;
+          width: 10%; }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;
